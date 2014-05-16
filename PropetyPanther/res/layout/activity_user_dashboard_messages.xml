@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    tools:context=".UserDashboardMessages" 
+    android:background="@drawable/background_gradient">
+
+    <ListView 
+        android:id="@+id/listViewMessages"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent" />  
+
+    
+</RelativeLayout>

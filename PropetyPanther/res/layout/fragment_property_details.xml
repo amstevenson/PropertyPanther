@@ -1,0 +1,181 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+        tools:context=".PropertyDetailsActivity" >
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_gradient">
+
+    <ImageView
+        android:id="@+id/propertyImage"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="fill_parent"
+        android:layout_height="160dp"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/propertyImage"
+        android:src="@drawable/test3" />
+
+    <TextView
+        android:id="@+id/propertySelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/propertyImage"
+        android:paddingTop="10dp"
+        android:paddingLeft="25dp"
+        android:textSize="22sp"
+        android:textColor="#66d9ef"
+        android:text="@string/property_selected" />
+    
+    <TextView
+        android:id="@+id/propertyDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/propertySelected"
+        android:paddingTop="15dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="40dp"
+        android:textColor="#FFF"
+        android:text="@string/property_selected" />
+    
+    <TextView
+        android:id="@+id/propertyDetailsLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/propertyDescription"
+        android:paddingTop="10dp"
+        android:textSize="22sp"
+        android:paddingLeft="25dp"
+        android:background="#0d0d16"
+        android:textColor="#66d9ef"
+        android:text="@string/property_details_label"  />
+    
+	<!--  Second part below, bullet point area with extra info about property -->
+
+	<TableLayout 
+	    android:id="@+id/propertyDetailsTable"
+	    android:layout_below="@id/propertyDetailsLabel"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#0d0d16">
+
+	    <TableRow >
+	        
+		    <TextView 
+		        android:id="@+id/propertyDetailsNumRooms"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingTop="10dp"
+				android:paddingBottom="10dp"
+				android:paddingLeft="25dp"
+				android:textColor="#FFF"
+				android:text="@string/property_num_rooms"/>
+				    
+		    <TextView 
+		        android:id="@+id/propertyAvgCost"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingTop="10dp"
+				android:paddingBottom="10dp"
+				android:paddingLeft="25dp"
+				android:textColor="#FFF"
+				android:text="@string/property_avg_cost"/>
+		 
+    	</TableRow>
+    
+	    <TableRow>
+	        
+    		<TextView 
+		        android:id="@+id/propertyRoomsVacant"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingTop="10dp"
+		        android:paddingLeft="25dp"
+				android:paddingBottom="10dp"
+				android:paddingRight="20dp"
+				android:textColor="#FFF"
+				android:text="@string/property_rooms_vacant"/>
+		    
+		    <TextView 
+		        android:id="@+id/propertyDistrict"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingTop="10dp"
+				android:paddingBottom="30dp"
+				android:paddingLeft="25dp"
+				android:paddingRight="20dp"
+				android:textColor="#FFF"
+				android:text="@string/property_district"/>
+		    
+    	</TableRow>
+
+    </TableLayout>
+    
+	<TextView
+	    android:id="@+id/propertyMapViewLabel"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" 
+	    android:textColor="#fff"
+	    android:paddingTop="15dp"
+	    android:paddingBottom="15dp"
+	    android:layout_marginTop="430dp"
+	    android:text="@string/property_mapview_label"
+	    android:background="#0d0d16"
+	    android:paddingLeft="25dp"/>
+	    
+	<ImageView
+	    android:id="@+id/propertyMapViewImage"
+	    android:layout_width="40dp"
+	    android:layout_height="40dp" 
+	    android:layout_marginLeft="185dp"
+	    android:contentDescription="@string/property_mapview_image"
+	    android:scaleType="fitXY"
+	    android:src="@drawable/googlemapicon" 
+	    android:layout_marginTop="435dp"/>
+	
+	<FrameLayout
+	    android:id="@+id/tableButtonHolder"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/propertyMapViewImage"
+	    android:background="#0d0d16"
+	    android:paddingBottom="30dp" >
+	    
+		<Button
+		    android:id="@+id/propertyDetailsInterestedBtn"
+		    android:layout_width="fill_parent"
+		    android:layout_height="32dp"
+		    android:layout_marginLeft="24dp"
+		    android:layout_marginRight="24dp"
+		    android:layout_marginTop="35dp"
+		    android:background="@drawable/button_interested_false"
+		    android:gravity="center_horizontal"
+		    android:paddingTop="5dp"
+		    android:paddingBottom="10dp"
+		    android:text="@string/property_details_button"
+		    android:textColor="#000"
+		    android:textSize="16sp" />
+	    
+		<ImageView
+		    android:id="@+id/tickInterested"
+		    android:layout_width="match_parent"
+		    android:layout_height="24dp"
+		    android:layout_marginLeft="40dp"
+		    android:layout_marginTop="40dp"
+		    android:contentDescription="@string/property_tick"
+		    android:paddingLeft="200dp"
+		    android:src="@drawable/tick"
+		    android:visibility="invisible" />
+		
+	</FrameLayout>
+	
+</RelativeLayout>
+
+
+</ScrollView>
+

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.propertypanther"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/head_small"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/Theme.Pp" >
+        <activity
+            android:name="propertypanther.activities.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="propertypanther.activities.DisplayPropertiesListActivity"
+            android:label="@string/title_property_list"
+            android:parentActivityName="propertypanther.activities.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.propertypanther.MainActivity" />
+        </activity>
+        <activity
+            android:name="propertypanther.activities.DisplayPropertiesActivity"
+            android:label="@string/title_property_detail"
+            android:parentActivityName="propertypanther.activities.DisplayPropertiesListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PropertyListActivity" />
+        </activity>
+        <activity
+            android:name="propertypanther.activities.ListPropertiesActivity"
+            android:label="@string/title_activity_list_properties"
+            android:parentActivityName="propertypanther.activities.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.propertypanther.MainActivity" />
+        </activity>
+        <activity
+            android:name="propertypanther.activities.PropertyDetailsActivity"
+            android:label="@string/title_activity_property_details" >
+        </activity>
+        <activity
+            android:name="propertypanther.activities.PropertyRoomsFragment"
+            android:label="@string/title_activity_property_gallery" >
+        </activity>
+        <activity
+            android:name="propertypanther.activities.PropertyMain"
+            android:label="@string/title_activity_property_main" >
+        </activity>
+        <activity
+            android:name="propertypanther.activities.PropertyDetailsEnquiry"
+            android:label="@string/title_activity_property_details_enquiry" >
+        </activity>
+        <activity
+            android:name="propertypanther.activities.MainActivitySignupForm"
+            android:label="@string/title_activity_main_activity_signup_form" >
+        </activity>
+        <activity
+            android:name="propertypanther.activities.UserDashboard"
+            android:label="@string/title_activity_user_dashboard" >
+        </activity>
+        <activity
+            android:name="propertypanther.activities.UserDashboardMessages"
+            android:label="@string/title_activity_user_dashboard_messages"
+            android:parentActivityName="propertypanther.activities.UserDashboard" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="propertypanther.activities.UserDashboard" />
+        </activity>
+        <activity
+            android:name="propertypanther.activities.UserDashboardPayments"
+            android:label="@string/title_activity_user_dashboard_payments" >
+        </activity>
+        <activity
+            android:name="propertypanther.activities.ListPropertiesSearch"
+            android:label="@string/title_activity_property_search" >
+        </activity>
+        <activity
+            android:name="propertypanther.activities.UserDashBoardWholeMessage"
+            android:label="@string/title_activity_user_dash_board_whole_message" >
+        </activity>
+        <activity
+            android:name="propertypanther.activities.PropertyDetailsMapView"
+            android:label="@string/title_activity_property_details_map_view" >
+        </activity>
+        <activity
+            android:name="propertypanther.activities.UserDashboardChangeDetails"
+            android:label="@string/title_activity_user_dashboard_change_details" >
+        </activity>
+        <activity
+            android:name="propertypanther.activities.UserDashboardTrackedProperties"
+            android:label="@string/title_activity_user_dashboard_tracked_properties" >
+        </activity>
+        <activity
+            android:name="propertypanther.activities.UserDashboardMaintenanceRequest"
+            android:label="@string/title_activity_dashboard_maintenance_request" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/messageContainer"
+    android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+        
+    <TextView 
+        android:id="@+id/messageName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="60dp"
+        android:text="@string/dashboard_latest_message_name"
+        android:background="#45101529"/>
+        
+    <TextView 
+        android:id="@+id/messageDate"
+        android:paddingTop="5dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="260dp"
+        android:textColor="#fff"
+        android:text="@string/dashboard_latest_message_date"/>
+    
+    <TextView 
+        android:id="@+id/messageContent"
+        android:layout_marginTop="30dp"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:text="@string/dashboard_latest_message"
+        android:textColor="#fff"
+        android:maxLines="1"/>
+        
+    <ImageView 
+        android:id="@+id/messageImage"
+        android:layout_marginTop="15dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:contentDescription="@string/dashboard_latest_message_image"/>
+    
+</FrameLayout>
+

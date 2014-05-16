@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    tools:context=".UserDashBoardWholeMessage" 
+    android:background="@drawable/background_gradient">
+        
+    <TextView
+        android:id="@+id/indivMessageName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/indivMessageDate"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="#0b1526"
+        android:paddingLeft="60dp"
+        android:text="@string/dashboard_latest_message_name" />
+    
+    <TextView 
+        android:id="@+id/indivMessageDate"
+        android:paddingTop="10dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:textColor="#fff"
+        android:text="@string/dashboard_latest_message_date" />
+        
+    <ImageView 
+        android:id="@+id/indivMessageImage"
+        android:layout_marginTop="5dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/mail"
+        android:contentDescription="@string/dashboard_latest_message_image"/>
+
+    <TextView
+        android:id="@+id/indivMessageContent"
+        android:layout_width="275dp"
+        android:layout_height="fill_parent"
+        android:layout_alignLeft="@+id/indivMessageName"
+        android:layout_alignRight="@+id/indivMessageName"
+        android:layout_below="@+id/indivMessageName"
+        android:background="#45101529"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:text="@string/dashboard_latest_message"
+        android:textColor="#fff" />
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    tools:context=".UserDashboardMessages" 
+    android:background="@drawable/background_gradient">
+
+    <!--  payments panel of labels -->
+    <TextView 
+        android:id="@+id/paymentAmountLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#0b1526"
+        android:text="@string/dashboard_payments_amount_label"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:textColor="#fff"
+        android:textSize="16sp"/>
+
+    <TextView
+       android:id="@+id/paymentDueLabel"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignBaseline="@+id/paymentAmountLabel"
+       android:layout_alignBottom="@+id/paymentAmountLabel"
+       android:layout_alignParentLeft="true"
+       android:paddingLeft="90dp"
+       android:text="@string/dashboard_payments_due_label"
+       android:textColor="#fff"
+       android:textSize="16sp" />
+    
+    <TextView
+       android:id="@+id/paymentReceivedLabel"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignBaseline="@+id/paymentAmountLabel"
+       android:layout_alignBottom="@+id/paymentAmountLabel"
+       android:layout_alignParentLeft="true"
+       android:paddingLeft="180dp"
+       android:text="@string/dashboard_payments_received_label"
+       android:textColor="#fff"
+       android:textSize="16sp" />
+
+    <TextView
+       android:id="@+id/paymentStatusLabel"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignBaseline="@+id/paymentAmountLabel"
+       android:layout_alignBottom="@+id/paymentAmountLabel"
+       android:layout_marginLeft="275dp"
+       android:layout_marginRight="10dp"
+       android:text="@string/dashboard_payments_status_label"
+       android:textColor="#fff"
+       android:textSize="16sp" />
+   
+    
+    <!--  payments ListView -->
+   
+   <ListView 
+        android:id="@+id/listViewPayments"
+        android:layout_marginTop="38dp"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent" />
+   
+</RelativeLayout>

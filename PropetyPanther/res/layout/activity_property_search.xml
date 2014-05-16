@@ -1,0 +1,131 @@
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background_gradient"
+    tools:context=".ListPropertiesSearch" >
+
+        <TextView
+	        android:id="@+id/enquiryHeader"
+	        android:paddingTop="10dp"
+	        android:paddingBottom="30dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/property_search_label"
+	        android:textSize="18sp" 
+	        android:textColor="#66d9ef"/>
+    
+	    <TextView 
+	        android:id="@+id/searchlocation"
+	        android:layout_marginTop="130dp"
+	        android:layout_marginLeft="15dp"
+	        android:layout_height="match_parent"
+	        android:layout_width="match_parent"
+	        android:textSize="16sp"
+	        android:textColor="#8cdce3"
+	        android:text="@string/search_loc_label"/>
+	    
+		<EditText
+	        android:id="@+id/editSearchLocation"
+	        android:layout_marginTop="130dp"
+	        android:layout_marginLeft="100dp"
+	        android:paddingTop="5dp"
+	        android:paddingBottom="5dp"
+	        android:paddingLeft="5dp"
+	        android:paddingRight="5dp"
+	        android:layout_width="200dp"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/rounded_border_grey_white"
+	        android:textColor="#000000"
+	        android:textSize="13sp"
+	        android:maxLength="30"
+	        android:hint="@string/initialSearchQuestion"
+	        android:imeOptions="actionNext"
+	        android:inputType="textCapSentences" />
+		
+	    <TextView 
+	        android:id="@+id/searchMinPrice"
+	        android:layout_marginTop="170dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_height="match_parent"
+	        android:layout_width="match_parent"
+	        android:textSize="16sp"
+	        android:textColor="#8cdce3"
+	        android:text="@string/search_minprice_label"/>
+		
+		<SeekBar 
+		    android:id="@+id/seekbarMinPrice"
+		    android:layout_width="170dp"
+		    android:layout_height="30dp"
+		    android:layout_marginLeft="90dp"
+		    android:layout_marginTop="165dp"
+		    android:progress="20"/>
+
+		<EditText
+	        android:id="@+id/editMinPrice"
+	        android:layout_marginTop="170dp"
+	        android:layout_marginLeft="260dp"
+	        android:paddingTop="5dp"
+	        android:paddingBottom="5dp"
+	        android:paddingLeft="5dp"
+	        android:paddingRight="5dp"
+	        android:layout_width="40dp"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/rounded_border_grey_white"
+	        android:textColor="#000000"
+	        android:textSize="13sp"
+	        android:maxLength="4"
+	        android:hint="@string/minprice"
+	        android:imeOptions="actionNext"
+	        android:inputType="numberDecimal" />
+		
+		<TextView 
+	        android:id="@+id/searchMaxPrice"
+	        android:layout_marginTop="205dp"
+	        android:layout_marginLeft="6dp"
+	        android:layout_height="match_parent"
+	        android:layout_width="match_parent"
+	        android:textSize="16sp"
+	        android:textColor="#8cdce3"
+	        android:text="@string/search_maxprice_label"/>
+		
+		<SeekBar 
+		    android:id="@+id/seekbarMaxPrice"
+		    android:layout_width="170dp"
+		    android:layout_height="30dp"
+		    android:layout_marginLeft="90dp"
+		    android:layout_marginTop="200dp"/>
+
+		<EditText
+	        android:id="@+id/editMaxPrice"
+	        android:layout_marginTop="200dp"
+	        android:layout_marginLeft="260dp"
+	        android:paddingTop="5dp"
+	        android:paddingBottom="5dp"
+	        android:paddingLeft="5dp"
+	        android:paddingRight="5dp"
+	        android:layout_width="40dp"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/rounded_border_grey_white"
+	        android:textColor="#000000"
+	        android:textSize="13sp"
+	        android:maxLength="4"
+	        android:hint="@string/maxprice"
+	        android:imeOptions="actionDone"
+	        android:inputType="numberDecimal" />
+		
+		<Button
+		    android:id="@+id/refineSearch"
+		    android:layout_marginTop="260dp"
+		    android:layout_marginLeft="80dp"
+		    android:layout_width="140dp"
+		    android:layout_height="50dp"
+		    android:background="#0c4661"
+		    android:textSize="16sp"
+		    android:text="@string/search"/>
+		
+</FrameLayout>

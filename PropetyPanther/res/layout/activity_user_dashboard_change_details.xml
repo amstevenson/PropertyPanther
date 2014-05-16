@@ -1,0 +1,443 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="30dp"
+    tools:context="propertypanther.activities.UserDashboardChangeDetails"
+    tools:ignore="MergeRootFrame"
+    android:background="@drawable/background_gradient" > 
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    
+	    <TextView
+	        android:id="@+id/userDetailsExplanLabel"
+	        android:paddingBottom="50dp"
+	        android:gravity="center"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/change_userdetails_label"
+	        android:textSize="16sp" 
+	        android:textColor="#66d9ef"/>
+	    
+	    <TextView
+	        android:id="@+id/changeUserForenameLabel"
+	        android:layout_below="@id/userDetailsExplanLabel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/change_user_forename_label"
+	        android:textSize="14sp" 
+	        android:textColor="#fff"
+	        android:layout_marginLeft="44.5dp" />
+	
+	     <EditText
+	         android:id="@+id/changeUserForename"
+	         android:layout_width="235dp"
+	         android:layout_height="wrap_content"
+	         android:layout_alignBaseline="@+id/changeUserForenameLabel"
+	         android:layout_alignBottom="@+id/changeUserForenameLabel"
+	         android:layout_toRightOf="@+id/changeUserForenameLabel"
+	         android:background="#FFFFFF"
+	         android:layout_marginLeft="15dp"
+	         android:ems="10"
+	         android:gravity="center"
+	         android:hint="@string/change_user_forename"
+	         android:inputType="textPersonName"
+	         android:maxLength="30"
+	         android:paddingBottom="15dp"
+	         android:paddingLeft="5dp"
+	         android:paddingRight="5dp"
+	         android:paddingTop="15dp"
+	         android:textColor="#000000"
+	         android:textSize="13sp" >
+	     </EditText>
+	
+	     <TextView
+	         android:id="@+id/changeUserSurnameLabel"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content" 
+	         android:layout_below="@id/changeUserForenameLabel"
+	         android:gravity="center"
+	         android:layout_marginTop="30dp"
+	         android:text="@string/change_user_surname_label"
+	         android:textSize="16sp" 
+	         android:textColor="#fff"
+	         android:layout_marginLeft="42dp">
+	     </TextView>
+	     
+	     <EditText
+	         android:id="@+id/changeUserSurname"
+	         android:layout_width="235dp"
+	         android:layout_height="wrap_content"
+	         android:layout_alignBaseline="@+id/changeUserSurnameLabel"
+	         android:layout_alignBottom="@+id/changeUserSurnameLabel"
+	         android:layout_alignLeft="@+id/changeUserForename"
+	         android:background="#FFFFFF"
+	         android:ems="10"
+	         android:gravity="center"
+	         android:hint="@string/change_user_surname"
+	         android:inputType="textPersonName"
+	         android:maxLength="30"
+	         android:paddingBottom="15dp"
+	         android:paddingLeft="5dp"
+	         android:paddingRight="5dp"
+	         android:paddingTop="15dp"
+	         android:textColor="#000000"
+	         android:textSize="13sp" >
+	     </EditText>
+	     
+		<TextView
+	         android:id="@+id/changeUserEmailLabel"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content" 
+	         android:layout_below="@id/changeUserSurnameLabel"
+	         android:gravity="center"
+	         android:layout_marginTop="30dp"
+	         android:text="@string/change_user_email_label"
+	         android:textSize="16sp" 
+	         android:textColor="#fff"
+	         android:layout_marginLeft="67.5dp">
+	     </TextView>
+	     
+	     <EditText
+	         android:id="@+id/changeUserEmail"
+	         android:layout_width="235dp"
+	         android:layout_height="wrap_content"
+	         android:layout_alignBaseline="@+id/changeUserEmailLabel"
+	         android:layout_alignBottom="@+id/changeUserEmailLabel"
+	         android:layout_alignLeft="@+id/changeUserSurname"
+	         android:background="#FFFFFF"
+	         android:ems="10"
+	         android:gravity="center"
+	         android:hint="@string/change_user_email"
+	         android:inputType="textEmailAddress"
+	         android:maxLength="30"
+	         android:paddingBottom="15dp"
+	         android:paddingLeft="5dp"
+	         android:paddingRight="5dp"
+	         android:paddingTop="15dp"
+	         android:textColor="#000000"
+	         android:textSize="13sp" >
+
+	     </EditText>
+	     
+		<TextView
+	         android:id="@+id/changeUserPhoneLabel"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content" 
+	         android:layout_below="@id/changeUserEmailLabel"
+	         android:gravity="center"
+	         android:layout_marginTop="30dp"
+	         android:text="@string/change_user_phone_label"
+	         android:textSize="16sp" 
+	         android:textColor="#fff"
+	         android:layout_marginLeft="60.5dp">
+	     </TextView>
+	     
+	     <EditText
+	         android:id="@+id/changeUserPhone"
+	         android:layout_width="235dp"
+	         android:layout_height="wrap_content"
+	         android:layout_alignBaseline="@+id/changeUserPhoneLabel"
+	         android:layout_alignBottom="@+id/changeUserPhoneLabel"
+	         android:layout_alignLeft="@+id/changeUserEmail"
+	         android:background="#FFFFFF"
+	         android:ems="10"
+	         android:gravity="center"
+	         android:hint="@string/change_user_phone"
+	         android:inputType="phone"
+	         android:maxLength="30"
+	         android:paddingBottom="15dp"
+	         android:paddingLeft="5dp"
+	         android:paddingRight="5dp"
+	         android:paddingTop="15dp"
+	         android:textColor="#000000"
+	         android:textSize="13sp" >
+
+	     </EditText>
+	     
+		<TextView
+	         android:id="@+id/changeUserAddrl1Label"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content" 
+	         android:layout_below="@id/changeUserPhoneLabel"
+	         android:gravity="center"
+	         android:layout_marginTop="30dp"
+	         android:text="@string/change_user_addrl1_label"
+	         android:textSize="16sp" 
+	         android:textColor="#fff">
+	     </TextView>
+	     
+	     <EditText
+	         android:id="@+id/changeUserAddrl1"
+	         android:layout_width="235dp"
+	         android:layout_height="wrap_content"
+	         android:layout_alignBaseline="@+id/changeUserAddrl1Label"
+	         android:layout_alignBottom="@+id/changeUserAddrl1Label"
+	         android:layout_alignLeft="@+id/changeUserPhone"
+	         android:background="#FFFFFF"
+	         android:ems="10"
+	         android:gravity="center"
+	         android:hint="@string/change_user_addrl1"
+	         android:inputType="text"
+	         android:maxLength="30"
+	         android:paddingBottom="15dp"
+	         android:paddingLeft="5dp"
+	         android:paddingRight="5dp"
+	         android:paddingTop="15dp"
+	         android:textColor="#000000"
+	         android:textSize="13sp" >
+
+	     </EditText>
+	     
+		<TextView
+	         android:id="@+id/changeUserAddrl2Label"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content" 
+	         android:layout_below="@id/changeUserAddrl1Label"
+	         android:gravity="center"
+	         android:layout_marginTop="30dp"
+	         android:text="@string/change_user_addrl2_label"
+	         android:textSize="16sp" 
+	         android:textColor="#fff">
+	     </TextView>
+	     
+	     <EditText
+	         android:id="@+id/changeUserAddrl2"
+	         android:layout_width="235dp"
+	         android:layout_height="wrap_content"
+	         android:layout_alignBaseline="@+id/changeUserAddrl2Label"
+	         android:layout_alignBottom="@+id/changeUserAddrl2Label"
+	         android:layout_alignLeft="@+id/changeUserAddrl1"
+	         android:background="#FFFFFF"
+	         android:ems="10"
+	         android:gravity="center"
+	         android:hint="@string/change_user_addrl2"
+	         android:inputType="text"
+	         android:maxLength="30"
+	         android:paddingBottom="15dp"
+	         android:paddingLeft="5dp"
+	         android:paddingRight="5dp"
+	         android:paddingTop="15dp"
+	         android:textColor="#000000"
+	         android:textSize="13sp" >
+
+	     </EditText>
+	     
+		<TextView
+	         android:id="@+id/changeUserPostcodeLabel"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content" 
+	         android:layout_below="@id/changeUserAddrl2Label"
+	         android:gravity="center"
+	         android:layout_marginTop="30dp"
+	         android:text="@string/change_user_postcode_label"
+	         android:textSize="16sp" 
+	         android:textColor="#fff"
+	         android:layout_marginLeft="38dp">
+	     </TextView>
+	     
+	     <EditText
+	         android:id="@+id/changeUserPostcode"
+	         android:layout_width="235dp"
+	         android:layout_height="wrap_content"
+	         android:layout_alignBaseline="@+id/changeUserPostcodeLabel"
+	         android:layout_alignBottom="@+id/changeUserPostcodeLabel"
+	         android:layout_alignLeft="@+id/changeUserAddrl2"
+	         android:background="#FFFFFF"
+	         android:ems="10"
+	         android:gravity="center"
+	         android:hint="@string/change_user_postcode"
+	         android:inputType="text"
+	         android:maxLength="30"
+	         android:paddingBottom="15dp"
+	         android:paddingLeft="5dp"
+	         android:paddingRight="5dp"
+	         android:paddingTop="15dp"
+	         android:textColor="#000000"
+	         android:textSize="13sp" >
+
+	     </EditText>
+	     
+		<TextView
+	         android:id="@+id/changeUserCitynameLabel"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content" 
+	         android:layout_below="@id/changeUserPostcodeLabel"
+	         android:gravity="center"
+	         android:layout_marginTop="30dp"
+	         android:layout_marginBottom="40dp"
+	         android:text="@string/change_user_cityname_label"
+	         android:textSize="16sp" 
+	         android:textColor="#fff"
+	         android:layout_marginLeft="34dp">
+	     </TextView>
+	     
+	     <EditText
+	         android:id="@+id/changeUserCityname"
+	         android:layout_width="235dp"
+	         android:layout_height="wrap_content"
+	         android:layout_alignBaseline="@+id/changeUserCitynameLabel"
+	         android:layout_alignBottom="@+id/changeUserCitynameLabel"
+	         android:layout_alignLeft="@+id/changeUserPostcode"
+	         android:background="#FFFFFF"
+	         android:ems="10"
+	         android:gravity="center"
+	         android:hint="@string/change_user_cityname"
+	         android:inputType="text"
+	         android:maxLength="30"
+	         android:paddingBottom="15dp"
+	         android:paddingLeft="5dp"
+	         android:paddingRight="5dp"
+	         android:paddingTop="15dp"
+	         android:textColor="#000000"
+	         android:textSize="13sp" >
+
+	     </EditText>
+	     
+	   	 <!--  password section -->
+	
+	     <EditText
+	         android:id="@+id/changeCurrPassword"
+	         android:layout_width="235dp"
+	         android:layout_height="wrap_content"
+	         android:layout_alignBaseline="@+id/changeUserCurrPasswordLabel"
+	         android:layout_alignBottom="@+id/changeUserCurrPasswordLabel"
+	         android:layout_toRightOf="@+id/changeUserCurrPasswordLabel"
+	         android:background="#FFFFFF"
+	         android:layout_marginLeft="15dp"
+	         android:ems="10"
+	         android:gravity="center"
+	         android:hint="@string/change_current_password"
+	         android:inputType="textPassword"
+	         android:maxLength="30"
+	         android:paddingBottom="15dp"
+	         android:paddingLeft="5dp"
+	         android:paddingRight="5dp"
+	         android:paddingTop="15dp"
+	         android:textColor="#000000"
+	         android:textSize="12sp">
+	     </EditText>
+	     
+	     <EditText
+	         android:id="@+id/changeNewRepeatPassword"
+	         android:layout_width="235dp"
+	         android:layout_height="wrap_content"
+	         android:layout_alignBaseline="@+id/changeNewPasswordRepeatLabel"
+	         android:layout_alignBottom="@+id/changeNewPasswordRepeatLabel"
+	         android:layout_alignLeft="@+id/changeNewPassword"
+	         android:background="#FFFFFF"
+	         android:ems="10"
+	         android:gravity="center"
+	         android:hint="@string/change_new_password_repeat"
+	         android:inputType="textPassword"
+	         android:maxLength="30"
+	         android:paddingBottom="15dp"
+	         android:paddingLeft="5dp"
+	         android:paddingRight="5dp"
+	         android:paddingTop="15dp"
+	         android:textColor="#000000"
+	         android:textSize="12sp">
+	     </EditText>
+
+	     <TextView
+	         android:id="@+id/userDetailsPasswordLabel"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_alignParentLeft="true"
+	         android:layout_below="@+id/changeUserSubmitBtn"
+	         android:layout_marginTop="16dp"
+	         android:gravity="center"
+	         android:paddingBottom="50dp"
+	         android:text="@string/change_userpassword_label"
+	         android:textColor="#66d9ef"
+	         android:textSize="16sp" />
+
+	     <TextView
+	         android:id="@+id/changeUserCurrPasswordLabel"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_below="@+id/userDetailsPasswordLabel"
+	         android:layout_toLeftOf="@+id/changeUserCityname"
+	         android:text="@string/change_current_password_label"
+	         android:textColor="#fff"
+	         android:textSize="14sp" />
+
+	     <EditText
+	         android:id="@+id/changeNewPassword"
+	         android:layout_width="235dp"
+	         android:layout_height="wrap_content"
+	         android:layout_alignLeft="@+id/changeCurrPassword"
+	         android:layout_alignParentRight="true"
+	         android:layout_alignTop="@+id/changeNewPasswordLabel"
+	         android:background="#FFFFFF"
+	         android:ems="10"
+	         android:gravity="center"
+	         android:hint="@string/change_new_password"
+	         android:inputType="textPassword"
+	         android:maxLength="30"
+	         android:paddingBottom="15dp"
+	         android:paddingLeft="5dp"
+	         android:paddingRight="5dp"
+	         android:paddingTop="15dp"
+	         android:textColor="#000000"
+	         android:textSize="12sp" >
+
+	     </EditText>
+
+	     <TextView
+	         android:id="@+id/changeNewPasswordRepeatLabel"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_alignParentLeft="true"
+	         android:layout_below="@+id/changeNewPassword"
+	         android:gravity="center"
+	         android:text="@string/change_new_password_repeat_label"
+	         android:textColor="#fff"
+	         android:textSize="16sp"
+	         android:paddingTop="10dp"
+	         android:layout_marginTop="4dp" />
+
+	     <TextView
+	         android:id="@+id/changeNewPasswordLabel"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_alignLeft="@+id/changeUserCurrPasswordLabel"
+	         android:layout_below="@+id/changeCurrPassword"
+	         android:layout_marginTop="17dp"
+	         android:gravity="center"
+	         android:text="@string/change_new_password_label"
+	         android:textColor="#fff"
+	         android:textSize="16sp"
+	         android:paddingTop="10dp"/>
+
+	     <Button
+	         android:id="@+id/changeUserPasswordBtn"
+	         android:layout_width="140dp"
+	         android:layout_height="wrap_content"
+	         android:layout_below="@+id/changeNewRepeatPassword"
+	         android:layout_marginBottom="15dp"
+	         android:layout_marginTop="32dp"
+	         android:background="#0c4661"
+	         android:text="@string/change_password_button"
+	         android:textSize="16sp" 
+	         android:layout_marginLeft="80dp"/>
+
+	     <Button
+	         android:id="@+id/changeUserSubmitBtn"
+	         android:layout_width="140dp"
+	         android:layout_height="wrap_content"
+	         android:layout_alignLeft="@+id/changeUserPasswordBtn"
+	         android:layout_below="@+id/changeUserCitynameLabel"
+	         android:background="#0c4661"
+	         android:text="@string/change_user_details_button"
+	         android:textSize="16sp" />
+	     
+	</RelativeLayout>
+     
+</ScrollView>
+

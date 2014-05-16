@@ -1,0 +1,352 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".UserDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+    <!--  Navigation panel -->
+	<android.support.v4.widget.DrawerLayout
+	    android:id="@+id/dashb_nav_menu_drawer_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	
+	    <!-- Framelayout to display Fragments -->
+	    <FrameLayout
+	        android:id="@+id/frame_container"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" />
+	
+	    <!-- Listview to display slider menu -->
+	    <ListView
+	        android:id="@+id/dashb_list_slidermenu"
+	        android:layout_width="240dp"
+	        android:layout_height="match_parent"
+	        android:layout_gravity="start"
+	        android:choiceMode="singleChoice"
+	        android:divider="#FFF"
+	        android:dividerHeight="0dp"        
+	        android:listSelector="@drawable/list_selector"
+	        android:background="@drawable/nav_background_shape_purple"/>
+	</android.support.v4.widget.DrawerLayout>
+
+	<ScrollView 
+	    android:layout_width="match_parent"
+	    android:layout_height="fill_parent">
+	
+		<FrameLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingTop="@dimen/activity_vertical_margin"
+		    android:background="@drawable/background_gradient"
+		    android:scrollbars="vertical" >
+	
+		    <!--  "Signed in" panel -->
+		    <TextView
+		        android:id="@+id/dashboardSignedinLabel"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingTop="10dp"
+		        android:paddingBottom="10dp"
+		        android:paddingLeft="10dp"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:textSize="16sp"
+		        android:textColor="#fff"
+		        android:background="#051b26"
+		        android:text="@string/dashboard_signin_label" />
+		
+		    <ImageView 
+		        android:id="@+id/dashboardSignedinUserImage"
+		        android:layout_marginTop="54dp"
+		        android:layout_marginLeft="20dp"
+		        android:layout_width="40dp"
+		        android:layout_height="40dp"
+		        android:scaleType="fitXY"
+		        android:contentDescription="@string/dashboard_contentdesc_profileimg"
+		        android:src="@drawable/test4"/>
+		    
+		    <TextView
+		        android:id="@+id/dashboardSignedinUsername"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:paddingTop="14dp"
+		        android:paddingBottom="40dp"
+		        android:layout_marginTop="40dp"
+		        android:background="#45101529"
+		        android:paddingLeft="65dp"
+		        android:text="@string/dashboard_username"
+		        android:textColor="#66d9ef"
+		        android:textSize="15sp" />
+		    
+		    <Button
+		        android:id="@+id/dashboardChangeUserDetails"
+		        android:layout_width="30dp"
+		        android:layout_height="30dp"
+		        android:layout_marginLeft="295dp"
+		        android:layout_marginTop="5dp"
+		        android:background="@drawable/edit_icon"
+		        android:textSize="12sp" />
+		        
+		    <TextView 
+		        android:id="@+id/dashboardSignedinEmail"
+		        android:layout_marginTop="75dp"
+		        android:layout_marginLeft="75dp"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/dashboard_email"
+		        android:textSize="12sp"
+		        android:textColor="#fff"/>
+		    
+		    <!--  "Next payments" panel -->
+		    
+		    <TextView
+		        android:id="@+id/dashboardNextPaymentsLabel"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingTop="10dp"
+		        android:paddingBottom="10dp"
+		        android:paddingLeft="10dp"
+		        android:layout_marginTop="130dp"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:textSize="16sp"
+		        android:textColor="#fff"
+		        android:background="#051b26"
+		        android:text="@string/dashboard_nextpayment_label" />
+	    
+		    <TextView
+		        android:id="@+id/dashboardNextPaymentCost"
+		        android:layout_width="70dp"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="260dp"
+		        android:layout_marginRight="20dp"
+		        android:layout_marginTop="140dp"
+		        android:background="@drawable/rounded_border_green"
+		        android:paddingLeft="7dp"
+		        android:paddingTop="2dp"
+		        android:text="@string/dashboard_nextpayment_cost"
+		        android:textColor="#000"
+		        android:textSize="14sp" />
+		    
+		    <TextView
+		        android:id="@+id/dashboardFirstNextPayment"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingTop="10dp"
+		        android:paddingBottom="30dp"
+		        android:paddingLeft="30dp"
+		        android:layout_marginTop="170dp"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:textSize="14sp"
+		        android:textColor="#fe9720"
+		        android:background="#65101529"
+		        android:text="@string/dashboard_first_nextpayment" />
+		    
+		    <TextView
+		        android:id="@+id/dashboardFirstDaysLeft"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="200dp"
+		        android:layout_marginLeft="40dp"
+		        android:textSize="12sp"
+		        android:textColor="#fff"
+		        android:text="@string/dashboard_first_daysleft" />
+		    
+		    <TextView 
+		        android:id="@+id/dashboardSeperatorNextPayments"
+		        android:layout_width="2dp"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="180dp"
+		        android:layout_marginLeft="30dp"
+		        android:layout_marginRight="158dp"
+		        android:paddingTop="20dp"
+		        android:text="@string/dashboard_seperator"
+		        android:background="#0d4663" />
+		    
+		    <!--  "Messages" panel -->
+		    
+		    <TextView
+		        android:id="@+id/dashboardMessageLabel"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingTop="10dp"
+		        android:paddingBottom="10dp"
+		        android:paddingLeft="10dp"
+		        android:layout_marginTop="245dp"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:textSize="16sp"
+		        android:textColor="#fff"
+		        android:background="#051b26"
+		        android:text="@string/dashboard_latest_message_label" />
+		    
+		    <TextView
+		        android:id="@+id/dashboardLatestMessageName"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingTop="10dp"
+		        android:paddingBottom="60dp"
+		        android:paddingLeft="30dp"
+		        android:layout_marginTop="280dp"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:textSize="14sp"
+		        android:textColor="#66d9ef"
+		        android:background="#65101529"
+		        android:text="@string/dashboard_latest_message_name" />
+		    
+		    <TextView
+		        android:id="@+id/dashboardLatestMessageDate"
+		        android:layout_width="160dp"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="255dp"
+		        android:layout_marginTop="292dp"
+		        android:text="@string/dashboard_latest_message_date"
+		        android:textColor="#a7e22e"
+		        android:textSize="12sp" />
+		    
+		    <TextView
+		        android:id="@+id/dashboardLatestMessage"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="310dp"
+		        android:layout_marginLeft="40dp"
+		        android:layout_marginRight="30dp"
+		        android:maxLines="3"
+		        android:textSize="12sp"
+		        android:textColor="#fff"
+		        android:text="@string/dashboard_latest_message" />
+		    
+		    <TextView 
+		        android:id="@+id/dashboardSeperatorMessages"
+		        android:layout_width="2dp"
+		        android:layout_height="70dp"
+		        android:layout_marginTop="290dp"
+		        android:layout_marginLeft="30dp"
+		        android:layout_marginRight="158dp"
+		        android:text="@string/dashboard_seperator"
+		        android:background="#0d4663" />
+		    
+		    <!--  "User properties" panel -->
+		    <TextView
+		        android:id="@+id/dashboardYourPropertyLabel"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingTop="10dp"
+		        android:paddingBottom="10dp"
+		        android:paddingLeft="10dp"
+		        android:layout_marginTop="385dp"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:textSize="16sp"
+		        android:textColor="#fff"
+		        android:background="#051b26"
+		        android:text="@string/dashboard_yourproperty_label" />
+		    
+		    <TextView
+		        android:id="@+id/dashboardYourPropertyName"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingTop="10dp"
+		        android:paddingBottom="150dp"
+		        android:paddingLeft="10dp"
+		        android:layout_marginTop="420dp"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:textSize="14sp"
+		        android:textColor="#fe9720"
+		        android:background="#65101529"
+		        android:text="@string/dashboard_yourproperty_name" />
+		    
+		    <ImageView 
+		        android:id="@+id/dashboardPropertyImage"
+		        android:layout_marginTop="460dp"
+		        android:layout_gravity="center_horizontal"
+		        android:layout_width="280dp"
+		        android:layout_height="120dp"
+		        android:scaleType="fitXY"
+		        android:src="@drawable/test4"
+		        android:contentDescription="@string/dashboard_yourproperty_image"/>
+		    
+		   <Button 
+		       android:id="@+id/dashboardMaintenanceRequest"
+		       android:layout_width="30dp"
+		       android:layout_height="30dp"
+		       android:layout_marginTop="390dp"
+		       android:layout_marginLeft="295dp"
+		       android:background="@drawable/wrench"/> 
+		    
+		   <TextView
+		        android:id="@+id/dashboardAveragePropertyCost"
+		        android:layout_width="70dp"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="260dp"
+		        android:layout_marginRight="20dp"
+		        android:layout_marginTop="430dp"
+		        android:background="@drawable/rounded_border_green"
+		        android:paddingLeft="7dp"
+		        android:paddingTop="2dp"
+		        android:text="@string/dashboard_nextpayment_cost"
+		        android:textColor="#000"
+		        android:textSize="14sp" />
+		    
+		   <!-- Tracking labels and views -->
+		   
+		   	<TextView
+				android:id="@+id/dashboardTrackingLabel"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:paddingTop="10dp"
+				android:paddingBottom="10dp"
+				android:paddingLeft="10dp"
+				android:layout_marginTop="615dp"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+			    android:textSize="16sp"
+				android:textColor="#fff"
+				android:background="#051b26"
+				android:text="@string/dashboard_tracking_label" />
+		   
+		    <TextView 
+		        android:id="@+id/dashboardTrackingCity"
+		        android:layout_width="fill_parent"
+		        android:layout_height="50dp"
+		        android:textSize = "14sp"
+		        android:textColor="#66d9ef"
+		        android:layout_marginTop="655dp"
+		        android:layout_marginLeft="10dp"
+		        android:paddingTop="10dp"
+		        android:paddingBottom="10dp"
+		        android:paddingLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:text="@string/dashboard_tracking_location"
+		        android:background="#65101529" />
+		    
+		    <TextView 
+		        android:id="@+id/dashboardTrackingAddress"
+		        android:layout_width="140dp"
+		        android:layout_height="wrap_content"
+		        android:textSize = "14sp"
+		        android:textColor="#fff"
+		        android:layout_marginTop="665dp"
+		        android:layout_marginLeft="135dp"
+		        android:layout_marginRight="10dp"
+		        android:text="@string/dashboard_tracking_address" />
+		    
+		    <TextView 
+		        android:id="@+id/dashboardTrackingRoomCount"
+		        android:layout_width="wrap_content"
+		        android:layout_height="65dp"
+		        android:textSize = "14sp"
+		        android:textColor="#fff"
+		        android:layout_marginTop="665dp"
+		        android:layout_marginLeft="275dp"
+		        android:layout_marginRight="10dp"
+		        android:text="@string/dashboard_tracking_roomamount" />
+		    
+		</FrameLayout>
+	</ScrollView>
+</FrameLayout>

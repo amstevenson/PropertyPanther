@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/refSearch"
+        android:icon="@drawable/nav_properties"
+        android:title="@string/search"
+        android:showAsAction="ifRoom">
+          
+    </item>
+
+    
+</menu>

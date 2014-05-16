@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="propertypanther.activities.UserDashboardTrackedProperties"
+    tools:ignore="MergeRootFrame" 
+        android:background="@drawable/background_gradient">
+   
+    <!--  tracking panel of labels -->
+    <TextView 
+        android:id="@+id/trackingLocationLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#0b1526"
+        android:text="@string/dashboard_tracking_location_label"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#fff"
+        android:textSize="16sp"/>
+
+    <TextView
+       android:id="@+id/trackingAddressLabel"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignBaseline="@+id/trackingLocationLabel"
+       android:layout_alignBottom="@+id/trackingLocationLabel"
+       android:layout_alignParentLeft="true"
+       android:paddingLeft="120dp"
+       android:text="@string/dashboard_tracking_address_label"
+       android:textColor="#fff"
+       android:textSize="16sp" />
+    
+    <TextView
+       android:id="@+id/trackingRoomCount"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignBaseline="@+id/trackingAddressLabel"
+       android:layout_alignBottom="@+id/trackingAddressLabel"
+       android:layout_alignParentLeft="true"
+       android:paddingLeft="250dp"
+       android:text="@string/dashboard_tracking_avgroom_label"
+       android:textColor="#fff"
+       android:textSize="16sp" />
+
+    <!--  tracking ListView -->
+   
+   <ListView 
+        android:id="@+id/listViewTrackedProperties"
+        android:layout_marginTop="38dp"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent" />
+   
+	</RelativeLayout>
+ 

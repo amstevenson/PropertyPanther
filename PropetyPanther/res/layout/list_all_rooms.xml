@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+    
+    <!-- Property id -->
+    <TextView
+        android:id="@+id/pid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+ 
+    <!-- Room Image Label -->
+    <ImageView
+        android:id="@+id/roomImage"
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="160dp"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/room_image"
+        android:src="@drawable/test4" />
+    
+    <!-- Room Status -->
+    <TextView
+        android:id="@+id/rStatus"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dip"
+	    android:paddingBottom="40dp"
+	    android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:text="@string/room_status"
+        android:background="#000000"  />
+    
+    <!-- Room Price -->
+
+    <TextView
+        android:id="@+id/rPrice"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="185dp"
+        android:background="#000000"
+        android:text="@string/room_price"
+        android:textColor="#fd971f"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+    
+    <!-- Room Details -->
+
+    <TextView
+        android:id="@+id/rDetails"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="200dp"
+        android:paddingBottom="30dp"
+        android:paddingTop="5dip"
+        android:text="@string/room_details"
+        android:textColor="#fff"
+        android:textSize="12sp" />
+    
+</FrameLayout>
+

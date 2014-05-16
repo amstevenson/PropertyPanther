@@ -1,0 +1,17 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android" 
+  android:shape="rectangle"> 
+  <gradient 
+  android:startColor="#18283f" 
+  android:endColor="#0f384c" 
+  android:angle="45"/> 
+  
+  <selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/ab_stacked_solid_pp" android:state_activated="false"/>
+    <item android:drawable="@drawable/cab_background_top_pp" android:state_pressed="true"/>
+    <item android:drawable="@drawable/cab_background_top_pp" android:state_activated="true"/>
+
+	</selector>
+</shape>
+
+

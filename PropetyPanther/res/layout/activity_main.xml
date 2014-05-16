@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="@drawable/background_gradient"
+    android:orientation="horizontal" >
+
+    <!-- Image view for the PropertyPanther logo, with relevent TextViews -->
+    
+    <ImageView
+        android:id="@+id/pPantherImage"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="70dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:contentDescription="@string/propertyImage"
+        android:src="@drawable/panther_logo_large" />
+    
+    <!--  The 'Search' button displays the question (EditText) that will
+	    be responsible for storing location data. 
+	    The second button sends the location to the property_list activity -->
+   	
+    <Button
+        android:id="@+id/initialSearchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/pPantherImage"
+        android:gravity="center"
+        android:text="@string/initialSearch"
+        android:textSize="13sp"
+        android:background="#0c4661"
+        android:paddingLeft="75dp"
+        android:paddingRight="75dp"
+        android:onClick="onClick" />
+    
+    <Button
+        android:id="@+id/initialProcessSearchBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/initialSearchBtn"
+        android:layout_alignRight="@+id/initialSearchBtn"
+        android:layout_below="@+id/initialSearchBtn"
+        android:layout_marginTop="10dp"
+        android:text="@string/initialProcessSearch"
+        android:textSize="13sp" 
+        android:visibility="invisible"
+        android:background="#0c4661"
+        android:paddingLeft="75dp"
+        android:paddingRight="75dp"
+        android:onClick="onClick" />
+    
+    <AutoCompleteTextView
+        android:id="@+id/initialSearchLocation"
+        android:layout_width="246dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/initialSearchBtn"
+        android:layout_alignLeft="@+id/initialSearchBtn"
+        android:dropDownWidth="250dp"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        android:paddingRight="34dp"
+        android:paddingLeft="35dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textSize="13sp"
+        android:maxLength="30"
+        android:hint="@string/initialSearchQuestion"
+        android:visibility="invisible"
+        android:imeOptions="actionDone"
+        android:gravity="center"
+        android:inputType="textCapSentences" />
+    
+    <!--  The second button - will display buttons pertaining to the username/password. 
+       	  The username and password will need to be checked
+       	  against a database, if it exists, the user can 
+       	  proceed to their dashboard, else they will have to register
+       	  or enter as a guest.     								   --> 
+    
+    <Button
+        android:id="@+id/initialLogChoice"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/initialSearchBtn"
+        android:layout_alignRight="@+id/initialSearchBtn"
+        android:layout_below="@+id/initialSearchBtn"
+        android:layout_marginTop="15dp"
+        android:text="@string/initialLogChoice"
+        android:textSize="13sp" 
+        android:background="#0c4661"
+        android:paddingLeft="75dp"
+        android:paddingRight="75dp"
+        android:onClick="onClick"/>
+    
+    <!--  the username field -->
+
+
+    <EditText
+        android:id="@+id/initialUsername"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/initialSearchBtn"
+        android:layout_alignLeft="@+id/initialSearchBtn"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textSize="13sp"
+        android:maxLength="30"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:hint="@string/initialUsername"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/initialPassword"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/initialLogChoice"
+        android:layout_alignLeft="@+id/initialLogChoice"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:maxLength="30"
+        android:inputType="textPassword"
+        android:hint="@string/initialPassword"
+        android:imeOptions="actionDone"
+        android:visibility="invisible" />
+    
+    <TextView 
+        android:id="@+id/initialSignupText"
+        android:paddingTop="10dp"
+        android:paddingLeft="65dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/initialPassword"
+        android:text="@string/signup_text"
+        android:onClick="onClick"/>
+    
+    <!-- This will be deleted, to test that the login works, add a user, by clicking register.  -->
+    <Button
+        android:id="@+id/initialloginBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/initialSearchBtn"
+        android:layout_alignRight="@+id/initialSearchBtn"
+        android:layout_below="@+id/initialLogChoice"
+        android:layout_marginTop="15dp"
+        android:text="@string/initialLogin"
+        android:textSize="13sp" 
+        android:visibility="invisible"
+        android:background="#0c4661"
+        android:paddingLeft="75dp"
+        android:paddingRight="75dp"
+        android:onClick="onClick"/>
+    
+</RelativeLayout>

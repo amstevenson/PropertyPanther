@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">"Property Panther "</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>Search Properties</item>
+        <item>My Dashboard</item>
+        <item>Messages</item>
+        <item>Log off</item>
+        <item>Payments</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/nav_home</item>
+        <item>@drawable/nav_properties</item>
+        <item>@drawable/nav_dashboard</item>
+        <item>@drawable/nav_upcoming</item>
+        <item>@drawable/nav_payments</item>
+        <item>@drawable/nav_lock</item>
+    </array>
+
+    <!-- Nav Drawer Profile Test Items -->
+    <!-- profile image -->
+    <array name="nav_drawer_profile_image">
+        <item>@drawable/guest</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
+    <!-- initial search screen -->
+    <string name="pPantherImageCaption1">Property</string>
+    <string name="pPantherImageCaption2">Panther</string>
+    <string name="initialSearch">Find a property</string>
+    <string name="initialSearchQuestion">Where would you like to live?</string>
+    <string name="initialProcessSearch">Search</string>
+    <string name="initialLogChoice">Sign in to your account</string>
+    <string name="initialLogin">Sign in</string>
+    <string name="initialUsername">Email Address</string>
+    <string name="initialPassword">Password</string>
+    <string name="signup_text">Don\'t have an account? Click here</string>
+
+    <!-- search location properties -->
+    <string name="propertyImage">Image details</string>
+    <string name="title_property_list">Properties</string>
+    <string name="title_property_detail">Property Details</string>
+    <string name="cost_label">£(pm): </string>
+    <string name="propertyAddr1">Addr1</string>
+    <string name="propertyAddr2">Addr2</string>
+    <string name="property_search_label">Search for properties by entering a location followed by a minimum and maximum cost.</string>
+
+    <!-- selected property -->
+    <string name="property_selected">single property</string>
+
+    <!-- Selected property information -->
+    <string name="nav_property">Property</string>
+    <string name="nav_rooms">Rooms</string>
+    <string name="property_details_label">Details</string>
+    <string name="property_nearby_des_label">Nearby destinations</string>
+    <string name="property_nearby_des">All the points of interest relevant to the search. I.e,
+        "this is near a really cool university".</string>
+    <string name="property_avg_cost">Average Cost</string>
+    <string name="property_rooms_vacant">Rooms Vacant</string>
+    <string name="property_district">District</string>
+    <string name="property_num_rooms">Num Rooms</string>
+    <string name="property_details_button">I\'m Interested!</string>
+    <string name="property_tick">Tick when the user is interested</string>
+    <string name="property_mapview_label">• Map View</string>
+    <string name="property_mapview_image">Google map image</string>
+
+    <!-- Activity_property_details_enquiry strings -->
+    <string name="enquiry_initial_statement">In order to send you information about the property that you have
+	    displayed interest in, please enter your email address below and press the \'submit\' button</string>
+    <string name="enquiry_email_label">Email Address:</string>
+    <string name="initial_email_hint">Please enter your email address</string>
+    <string name="email_button">Submit</string>
+
+    <!-- Fragment Properties Gallery -->
+    <string name="room_image">Room Image</string>
+    <string name="room_status">Status</string>
+    <string name="room_price">Price</string>
+    <string name="room_details">Details</string>
+
+    <!-- List properties ActionBar Search -->
+    <string name="close">Close</string>
+    <string name="search">Search</string>
+    <string name="search_loc_label">Location:</string>
+    <string name="search_minprice_label">Min Price:</string>
+    <string name="search_maxprice_label">Max Price:</string>
+    <string name="search_parameters">Search Parameters</string>
+    <string name="minprice">200</string>
+    <string name="maxprice">600</string>
+
+    <!-- Signup activity -->
+    <string name="signup_description_label">In order to make an account with us, we need some information
+         from you, please put relevant information in all of the fields below and press the \'submit\' button.</string>
+    <string name="signup_forename_label">Forename:</string>
+    <string name="signup_forename">Enter your forename</string>
+    <string name="signup_surname_label">Surname:</string>
+    <string name="signup_surname">Enter your surname</string>
+    <string name="signup_password_label">Password:</string>
+    <string name="signup_password">Enter your password</string>
+    <string name="signup_password_repeat_label">Repeat password:</string>
+    <string name="signup_password_repeat">Repeat your password</string>
+    <string name="signup_email_label">Email Address:</string>
+    <string name="signup_email">Enter your Email Address</string>
+    <string name="signup_button_submit">Submit</string>
+
+    <!-- Activity Title strings -->
+    <string name="title_activity_property_details_enquiry">Enquiries</string>
+    <string name="title_activity_main_activity_signup_form">Signup</string>
+    <string name="title_activity_user_dashboard">Dashboard</string>
+    <string name="title_activity_list_properties">Results</string>
+    <string name="title_activity_property_details">Your chosen property</string>
+    <string name="title_activity_property_gallery">PropertyGalleryActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_property_main">MainActivity</string>
+    <string name="title_activity_user_dashboard_messages">Messages</string>
+    <string name="title_activity_user_dashboard_payments">Payment History</string>
+    <string name="title_activity_property_search">Property Search</string>
+    <string name="title_activity_user_dash_board_whole_message">Chosen Message</string>
+    <string name="title_activity_property_details_map_view">Map View</string>
+    <string name="title_activity_user_dashboard_change_details">Change Details</string>
+
+    <!-- User Dashboard Activity -->
+    <string name="dashboard_signin_label">Signed in</string>
+    <string name="dashboard_contentdesc_profileimg">User Profile Image</string>
+    <string name="dashboard_username">Username</string>
+    <string name="dashboard_email">Email</string>
+    <string name="dashboard_nextpayment_label">Next payment</string>
+    <string name="dashboard_nextpayment_cost">£</string>
+    <string name="dashboard_first_nextpayment">First Next Payment</string>
+    <string name="dashboard_second_nextpayment">Second Next Date</string>
+    <string name="dashboard_first_daysleft">First days left</string>
+    <string name="dashboard_second_daysleft">Second days left</string>
+    <string name="dashboard_latest_message_label">Latest message</string>
+    <string name="dashboard_latest_message_name">Name Last Message</string>
+    <string name="dashboard_latest_message_date">Date of message</string>
+    <string name="dashboard_latest_message">The latest message for the user will be
+        displayed here. The rest of this is filler is here in order to determine
+        how many characters will be allowed for this particular part of the activity</string>
+    <string name="dashboard_latest_message_image">here</string>
+    <string name="dashboard_yourproperty_label">Your property</string>
+    <string name="dashboard_seperator"></string>
+    <string name="dashboard_yourproperty_name">Address</string>
+    <string name="dashboard_yourproperty_costmonth">Cost P/M</string>
+    <string name="dashboard_yourproperty_image">Property Image</string>
+    <string name="dashboard_change_details">Change Details</string>
+
+    <!-- Dashboard payments list -->
+    <string name="dashboard_payments_amount_label">Amount</string>
+    <string name="dashboard_payments_due_label">Due</string>
+    <string name="dashboard_payments_received_label">Received</string>
+    <string name="dashboard_payments_status_label">Status</string>
+
+    <!-- Dashboard tracking list -->
+    <string name="dashboard_tracking_label">Your latest tracked property</string>
+    <string name="dashboard_tracking_location">Location</string>
+    <string name="dashboard_tracking_address">Address</string>
+    <string name="dashboard_tracking_roomamount">Amount Rooms</string>
+    <string name="dashboard_tracking_location_label">Location</string>
+    <string name="dashboard_tracking_address_label">Address</string>
+    <string name="dashboard_tracking_avgroom_label">Room Count</string>
+
+    <!-- change user details -->
+    <string name="change_user_image">Image Path</string>
+    <string name="change_user_image_label">Image:</string>
+    <string name="change_userdetails_label">Edit all user information that is applicable, then click the 
+	    submit changes button.</string>
+    <string name="change_userdetails_search_image">S</string>
+    <string name="change_user_forename_label">Forename:</string>
+    <string name="change_user_forename">Enter Forename:</string>
+    <string name="change_user_surname_label">Surname:</string>
+    <string name="change_user_surname">Enter Surname:</string>
+    <string name="change_user_email_label">Email:</string>
+    <string name="change_user_email">Enter Email:</string>
+    <string name="change_user_phone_label">Phone:</string>
+    <string name="change_user_phone">Enter Phone:</string>
+    <string name="change_user_addrl1_label">Address Line 1:</string>
+    <string name="change_user_addrl1">Enter Address 1:</string>
+    <string name="change_user_addrl2_label">Address Line 2:</string>
+    <string name="change_user_addrl2">Enter Address 2:</string>
+    <string name="change_user_postcode_label">Postcode:</string>
+    <string name="change_user_postcode">Enter Postcode:</string>
+    <string name="change_user_cityname_label">City Name:</string>
+    <string name="change_user_cityname">Enter City Name:</string>
+    <string name="change_user_details_button">Change Details</string>
+    <string name="title_activity_user_dashboard_tracked_properties">Tracked Properties</string>
+    <string name="title_activity_dashboard_maintenance_request">Maintenance Request</string>
+
+    <!--  Maintenance Request -->
+    <string name="maintenance_label">To process a maintenance request, please fill out the box below with relevant information that relates
+         to the problem you are having.</string>
+    <string name="maint_request_details">Please enter your maintenance request details here</string>
+    <string name="maint_request_button">Process Request</string>
+    
+    <!--  change password -->
+    <string name="change_current_password_label">Current Password:</string>
+    <string name="change_current_password">Enter Current Password</string>
+    <string name="change_new_password_label">New Password:</string>
+    <string name="change_new_password">Enter New Password</string>
+    <string name="change_new_password_repeat_label">Repeat Password:</string>
+    <string name="change_new_password_repeat">Repeat New Password</string>
+    <string name="change_password_button">Change Password</string>
+    <string name="change_userpassword_label">To change your password: enter your current password, and your chosen new one twice, then click on the "Change Password" button.</string>
+    
+</resources>

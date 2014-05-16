@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/messageContainer"
+    android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="#45101529">
+        
+    <!--  payment history information -->
+
+	<TextView
+        android:id="@+id/paymentListAmount"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+	    android:layout_marginLeft="10dp"
+	    android:background="@drawable/rounded_border_green"
+	    android:paddingLeft="7dp"
+	    android:paddingTop="2dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+	    android:text="@string/dashboard_nextpayment_cost"
+	    android:textColor="#000"
+	    android:textSize="14sp" />
+    
+    <TextView
+        android:id="@+id/paymentListDue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:paddingLeft="90dp"
+        android:text="@string/dashboard_payments_due_label"
+        android:textColor="#fff" />
+    
+    <TextView
+        android:id="@+id/paymentListReceived"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:paddingLeft="180dp"
+        android:text="@string/dashboard_payments_received_label"
+        android:textColor="#fff" />
+    
+    <TextView
+        android:id="@+id/paymentListStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:paddingLeft="275dp"
+        android:text="@string/dashboard_payments_status_label"
+        android:textColor="#fff" />
+	
+</FrameLayout>

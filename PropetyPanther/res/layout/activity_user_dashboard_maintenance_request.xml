@@ -1,0 +1,53 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="propertypanther.activities.UserDashboardMaintenanceRequest"
+    tools:ignore="MergeRootFrame" 
+    android:background="@drawable/background_gradient">
+    
+		<TextView
+	        android:id="@+id/maintLabel"
+	        android:paddingTop="10dp"
+	        android:paddingBottom="30dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/maintenance_label"
+	        android:textSize="18sp" 
+	        android:textColor="#66d9ef"/>
+	    
+	    <EditText 
+	        android:id="@+id/maintRequestDetails"
+	        android:hint="@string/maint_request_details"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="#fff"
+	        android:textColor="#000"
+	        android:paddingLeft="5dp"
+	        android:paddingRight="5dp"
+	        android:paddingTop="5dp"
+	        android:paddingBottom="200dp"
+	        android:textSize="12sp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="130dp"
+	        android:maxHeight="250dp"/>
+	
+	    <Button
+	        android:id="@+id/btnmaintRequestProcess"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="380dp"
+	        android:background="#0c4661"
+	        android:gravity="center"
+	        android:text="@string/maint_request_button"
+	        android:textColor="#fff"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        android:layout_marginLeft="100dp" />
+    
+    </FrameLayout>
+

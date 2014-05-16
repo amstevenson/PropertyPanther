@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+
+	 	<!--  profile -->
+	    <ImageView
+	        android:id="@+id/profileBackground"
+	        android:layout_width="300dp"
+	        android:layout_height="150dp"
+	        android:scaleType="fitXY"
+	        android:contentDescription="@string/desc_list_item_icon"/>
+	 	
+	    <ImageView
+	        android:id="@+id/profilePicture"
+	        android:layout_width="50dp"
+	        android:layout_height="40dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginTop="90dp"
+	        android:scaleType="fitXY"
+	        android:contentDescription="@string/desc_list_item_icon"/>
+	        
+	    <TextView
+	        android:id="@+id/profileName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_marginLeft="80dp"
+	        android:layout_marginTop="75dp"
+	        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+	        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+	        android:textSize="16sp"
+	    	android:textColor="#62d1e5"
+	        android:gravity="center_vertical"
+	        android:paddingRight="20dp"/>
+	    
+	    <TextView
+	        android:id="@+id/profileEmail"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_marginTop="98dp"
+	        android:layout_marginLeft="80dp"
+	        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+	        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+	        android:textSize="12sp"
+	   		android:textColor="#FFFFFF"
+	        android:gravity="center_vertical"
+	        android:paddingRight="20dp"/>
+
+    <!--  for each nav item -->
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:contentDescription="@string/desc_list_item_icon"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/icon"
+        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        android:textColor="#8cdce3"
+        android:gravity="center_vertical"
+        android:paddingRight="40dp"/>
+    
+    <TextView android:id="@+id/counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+	    android:textColor="#8cdce3"/>
+
+</RelativeLayout>
